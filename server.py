@@ -46,7 +46,7 @@ class WebPageHandler(server.BaseHTTPRequestHandler):
 
         elif self.path.endswith(".html") :
             #! Handle all webpage access request
-            with open('index.html', 'rb') as f:
+            with open('/home/pi/index.html', 'rb') as f:
                 logging.info('HTML Pre-load successful')
                 self.send_response(200)
                 self.end_headers()
